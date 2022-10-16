@@ -4,7 +4,8 @@ const inquirer = require('inquirer');
 
 const fs = require('fs');
 
-const markdown = require("./Utilities/generateMarkdown")
+const markdown = require("./Utilities/generateMarkdown");
+const generateMarkdown = require('./Utilities/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -59,10 +60,9 @@ function writeToFile(fileName, data) {}
 function init() {
     inquirer.prompt(questions)
     .then((responses) => {
+    const readmeInfo = generateMarkdown(responses);
 
-    })
-    .catch((error) => {
-        console.log(error);
+    fs.createFile('README.md', readmeInfo, (err) => err ? console.log(err) : console.log('The README.md has been successfully generated.'))
     })
 }
 
