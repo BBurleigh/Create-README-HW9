@@ -38,7 +38,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide test instructions for how to run your project.',
+        message: 'Provide test instructions for how someone could test your project.',
         name: 'test'
     },
     {
