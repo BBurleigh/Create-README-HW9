@@ -1,0 +1,19 @@
+{
+  "name": "create-readme-hw9",
+  "version": "1.0.0",
+  "description": "A small app that creates a professional README.md, based on what the user inputs into the terminal prompts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BBurleigh/Create-README-HW9.git"
+  },
+  "author": "BBurleigh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BBurleigh/Create-README-HW9/issues"
+  },
+  "homepage": "https://github.com/BBurleigh/Create-README-HW9#readme"
+}
