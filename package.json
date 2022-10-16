@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BBurleigh/Create-README-HW9/issues"
   },
-  "homepage": "https://github.com/BBurleigh/Create-README-HW9#readme"
+  "homepage": "https://github.com/BBurleigh/Create-README-HW9#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
