@@ -1,7 +1,53 @@
 // TODO: Include packages needed for this application
 
+const inquirer = require('inquirer');
+const fs = require('fs');
+
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    {
+        type: 'input',
+        message: 'What is the title of your project?',
+        name: 'title'
+    },
+    {
+        type: 'input',
+        message: 'Write a description about your project. This can include what your project is, why you created it (beyond it was a HW assignment), or how it works.',
+        name: 'description'
+    },
+    {
+        type: 'checkbox',
+        message: 'Do you need a table of contents? If so, select what you would like to include in it. If not, select the last option, "None".',
+        name: 'table-of-contents',
+        choices: ['Installation', 'Usage', 'Credits', 'Tests', 'Questions', 'None']
+    },
+    {
+        type: 'input',
+        message: 'Does the user need to perform any actions/steps to install this project? If there are steps, walk through each step. If not, then say "No installation is required".',
+        name: 'installation'
+    },
+    {
+        type: 'input',
+        message: 'For this project, provide the instructions for how someone can use it. Providing examples of its usage as well as screenshots will also be helpful.',
+        name: 'usage'
+    },
+    {
+        type: 'input',
+        message: 'Who contributed to this project? Did you borrow or use code from other sources? List which sources and people assisted you in creating this project.',
+        name: 'contributions'
+    },
+    {
+        type: 'input',
+        message: 'Provide test instructions for how to run your project.',
+        name: 'test'
+    },
+    {
+        type: 'list',
+        message: 'Select the license that you are using for your project. If there is no license, select "Unlicensed".',
+        name: 'license',
+        choices: ['Apache 2.0', 'GNU General PUblic License 3.0', 'MIT License', 'BSD 2-Clause "simplified" License"', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'Unlicensed']
+    }
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
