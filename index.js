@@ -22,7 +22,7 @@ const questions = [
     {
         type: 'checkbox',
         message: 'Do you need a table of contents? If so, select what you would like to include in it. If not, select the last option, "None".',
-        name: 'table-of-contents',
+        name: 'tableofcontents',
         choices: ['Installation', 'Usage', 'Credits', 'Tests', 'Questions', 'None']
     },
     {
@@ -62,7 +62,7 @@ function init() {
     .then((responses) => {
     const readmeInfo = generateMarkdown(responses);
 
-    fs.createFile('README.md', readmeInfo, (err) => err ? console.log(err) : console.log('The README.md has been successfully generated.'))
+    fs.writeFile('README.md', readmeInfo, (err) => err ? console.log(err) : console.log('The README.md has been successfully generated.'))
     })
 }
 

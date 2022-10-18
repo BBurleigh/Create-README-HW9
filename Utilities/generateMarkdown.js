@@ -3,13 +3,13 @@
 function renderLicenseBadge(license) {
   switch(license) {
     case (license === 'Apache'):
-
+      return "Apache Badge"
       break;
     case (license === 'MIT'):
-
+      return "MIT Badge"
       break;
     case (license === 'GPLv3'):
-
+      return "GPLv3 Badge"
       break;
     default:
       return "";  
@@ -21,13 +21,13 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   switch(license) {
     case (license === 'Apache'):
-
+      return "Apache Link"
       break;
     case (license === 'MIT'):
-
+      return "MIT Link"
       break;
     case (license === 'GPLv3'):
-
+      return "GPLv3 Link"
       break;
     default:
       return "";  
@@ -39,13 +39,13 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   switch(license) {
     case (license === 'Apache'):
-
+      return "Apache Section"
       break;
     case (license === 'MIT'):
-
+      return "MIT Section"
       break;
     case (license === 'GPLv3'):
-
+      return "GPLv3 Section"
       break;
     default:
       return "";  
@@ -54,25 +54,31 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `#${data.title}
+  return `# ${data.title} 
 
-  ##Description
+  ${renderLicenseBadge(data.license)}
+
+  ## Description
   ${data.description}
 
-  ##Table of Contents
-  ${data.table-of-contents}
+  ## Table of Contents
+  ${data.tableofcontents}
 
-  ##Installation
+  ## Installation
   ${data.installation}
 
-  ##Usage
+  ## Usage
   ${data.usage}
 
-  ##Contributions
+  ## Contributions
   ${data.test}
 
-  ##License
+  ## License
   ${data.license}
+
+  ${renderLicenseLink(data.license)}
+
+  ${renderLicenseSection(data.license)}
 
 `;
 }
