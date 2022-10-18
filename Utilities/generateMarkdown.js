@@ -1,5 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch(license) {
     case 'Apache':
@@ -8,17 +6,18 @@ function renderLicenseBadge(license) {
     case 'MIT':
       return "MIT Badge"
       
-    case 'GPLv3':
-      return "GPLv3 Badge"
+    case 'GPL 3.0':
+      return "GPL 3.0 Badge"
       
+    case 'BSD 3':
+      return "BSD 3 Badge"
+
     default:
       return "";  
   }
   
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
   switch(license) {
     case 'Apache':
@@ -27,33 +26,42 @@ function renderLicenseLink(license) {
     case 'MIT':
       return "MIT Link"
       
-    case 'GPLv3':
-      return "GPLv3 Link"
+    case 'GPL 3.0':
+      return "GPL 3.0 Link"
+
+    case 'BSD 3':
+      return "BSD Link"
       
     default:
       return "";  
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   switch(license) {
     case 'Apache':
-      return license
+      return "Apache Section"
       
     case 'MIT':
       return "MIT Section"
       
-    case 'GPLv3':
-      return "GPLv3 Section"
+    case 'GPL 3.0':
+      return "GPL 3.0 Section"
+
+    case 'BSD 3':
+      return "BSD 3 Section"
       
     default:
       return "";  
   }
 }
 
-// TODO: Create a function to generate markdown for README
+function formatTable(tableofcontents) {
+  for(i = 0; i < tableofcontents.length; i++) {
+
+  }
+}
+
 function generateMarkdown(data) {
   return `# ${data.title} 
 

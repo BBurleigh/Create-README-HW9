@@ -1,9 +1,9 @@
-# HW 9 
+# HW 9  
 
-  Apache
+  Apache Badge
 
   ## Description
-  HW
+  It's HW.
 
   ## Table of Contents
   Installation,Usage,Credits
@@ -12,15 +12,15 @@
   NA
 
   ## Usage
-  None
+  None needed.
 
   ## Contributions
-  Use terminal
+  Put it in the terminal.
 
   ## License
   Apache
 
   Apache Link
 
-  Failed Test 3
+  Apache
 
