@@ -1,29 +1,31 @@
-# HW9 
+# New New HW9 
 
-  GPL 3.0 Badge
+Apache 2.0 Badge
 
-  ## Description
-  It's working
+## Description
+Gibberish
 
-  ## Table of Contents
-  * [Installation](Installation)
+## Table of Contents
+* [Installation](Installation)
 * [Usage](Usage)
 * [Credits](Credits)
+* [Tests](Tests)
+* [Questions](Questions)
 
 
-  ## Installation
-  None
+## Installation
+None
 
-  ## Usage
-  Here you go
+## Usage
+Blah blah
 
-  ## Contributions
-  Terminal. Use it
+## Contributions
+Try try try
 
-  ## License
-  GPL 3.0
+## License
+Apache 2.0
 
-  GPL 3.0 Link
+Apache 2.0 Link
 
-  GPL 3.0 Section
+Apache 2.0 Section
 

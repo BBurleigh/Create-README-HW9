@@ -1,7 +1,7 @@
 function renderLicenseBadge(license) {
   switch(license) {
-    case 'Apache':
-      return "Apache Badge"
+    case 'Apache 2.0':
+      return "Apache 2.0 Badge"
       
     case 'MIT':
       return "MIT Badge"
@@ -20,8 +20,8 @@ function renderLicenseBadge(license) {
 
 function renderLicenseLink(license) {
   switch(license) {
-    case 'Apache':
-      return "Apache Link"
+    case 'Apache 2.0':
+      return "Apache 2.0 Link"
       
     case 'MIT':
       return "MIT Link"
@@ -39,8 +39,8 @@ function renderLicenseLink(license) {
 
 function renderLicenseSection(license) {
   switch(license) {
-    case 'Apache':
-      return "Apache Section"
+    case 'Apache 2.0':
+      return "Apache 2.0 Section"
       
     case 'MIT':
       return "MIT Section"
