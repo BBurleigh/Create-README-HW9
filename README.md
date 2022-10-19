@@ -1,26 +1,29 @@
-# HW 9  
+# HW9 
 
-  Apache Badge
+  GPL 3.0 Badge
 
   ## Description
-  It's HW.
+  It's working
 
   ## Table of Contents
-  Installation,Usage,Credits
+  * [Installation](Installation)
+* [Usage](Usage)
+* [Credits](Credits)
+
 
   ## Installation
-  NA
+  None
 
   ## Usage
-  None needed.
+  Here you go
 
   ## Contributions
-  Put it in the terminal.
+  Terminal. Use it
 
   ## License
-  Apache
+  GPL 3.0
 
-  Apache Link
+  GPL 3.0 Link
 
-  Apache
+  GPL 3.0 Section
 

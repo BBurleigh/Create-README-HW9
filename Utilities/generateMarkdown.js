@@ -57,37 +57,45 @@ function renderLicenseSection(license) {
 }
 
 function formatTable(tableofcontents) {
-  for(i = 0; i < tableofcontents.length; i++) {
+  let str = "";
 
+  for(let i = 0; i < tableofcontents.length; i++) {
+
+    str += `* [${tableofcontents[i]}](${tableofcontents[i]})\n`;
+    
   }
+
+  return str;
+
 }
 
 function generateMarkdown(data) {
+  console.log(data)
   return `# ${data.title} 
 
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
-  ## Description
-  ${data.description}
+## Description
+${data.description}
 
-  ## Table of Contents
-  ${data.tableofcontents}
+## Table of Contents
+${formatTable(data.tableofcontents)}
 
-  ## Installation
-  ${data.installation}
+## Installation
+${data.installation}
 
-  ## Usage
-  ${data.usage}
+## Usage
+${data.usage}
 
-  ## Contributions
-  ${data.test}
+## Contributions
+${data.test}
 
-  ## License
-  ${data.license}
+## License
+${data.license}
 
-  ${renderLicenseLink(data.license)}
+${renderLicenseLink(data.license)}
 
-  ${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}
 
 `;
 }
